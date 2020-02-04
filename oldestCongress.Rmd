@@ -1,0 +1,24 @@
+---
+title: "oldestCongress"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+
+library(tidyverse)
+library(gov.1005.data)
+
+
+```
+
+```{r}
+
+oldest <- congress %>%
+  arrange(desc(age))
+
+head(oldest,1)
+
+
+```
+
